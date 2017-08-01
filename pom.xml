@@ -3,15 +3,35 @@
 
     <groupId>nl.fountain.xelem</groupId>
     <artifactId>xelem</artifactId>
-    <version>3.1</version>
+    <version>3.1.1</version>
+
+    <properties>
+        <maven.compiler.plugin.version>3.6.2</maven.compiler.plugin.version>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
-            <!-- TODO: Move all tests to the test folder -->
+            <!-- TODO: Move all tests to the test folder or exclude it from jar -->
             <!--<scope>test</scope>-->
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -1,2 +1,6 @@
 *.class
 *.log
+*.iml
+.idea/
+target/
+imported.xml

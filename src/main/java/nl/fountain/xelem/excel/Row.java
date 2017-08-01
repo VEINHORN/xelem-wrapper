@@ -219,6 +219,8 @@ public interface Row extends XLElement {
      */
     Cell addCell(BigDecimal data);
 
+    Cell addCell(Long data, String styleID);
+
     /**
      * Adds a new Cell to this row. If no cells were previously added
      * the cell will be added at index 1. Otherwise the cell will be added

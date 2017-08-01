@@ -1,0 +1,1918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Xelem   xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+         xmlns:o="urn:schemas-microsoft-com:office:office"
+         xmlns:x="urn:schemas-microsoft-com:office:excel"
+         xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+         xmlns:f="urn:schemas-fountain-nl:xelem:config"
+         xmlns:html="http://www.w3.org/TR/REC-html40">
+
+    <f:comment>      THIS IS AN EXCEL-FILE OF TYPE SpreadsheetML.        </f:comment>
+    <f:comment>                   IF YOU READ THIS                       </f:comment>
+    <f:comment>    YOU PROBABLY NEED A MORE RECENT VERSION OF EXCEL.     </f:comment>
+
+    <Styles>
+
+        <Style ss:ID="Default" ss:Name="Normal">
+            <Alignment ss:Vertical="Center"/>
+            <Font ss:Size="11" ss:FontName="Calibri"/>
+        </Style>
+        <Style ss:ID="sStr">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Font ss:Size="11" ss:FontName="Calibri"/>
+        </Style>
+        <Style ss:ID="sStr_U">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Size="11" ss:FontName="Calibri"/>
+        </Style>
+        <Style ss:ID="sStr_D">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+        </Style>
+        <Style ss:ID="sHeader">
+            <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#D3D3D3" ss:Pattern="Solid"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Left"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Right"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Bottom"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Top"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sStrMonosp">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Size="11" ss:FontName="Consolas"/>
+        </Style>
+        <Style ss:ID="sNum" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_T">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Top"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_B">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Bottom"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_BT">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Bottom"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Top"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_R">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Right"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_RT">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Right"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Top"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_RB">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Right"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Bottom"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_RBT">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Right"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Bottom"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Top"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_L">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Left"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_LT">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Left"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Top"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_LB">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Left"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Bottom"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_LBT">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Left"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Bottom"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Top"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_LR">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Left"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Right"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_LRT">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Left"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Right"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Top"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_LRB">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Left"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Right"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Bottom"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sStr_LRBT">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Borders>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Left"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Right"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Bottom"/>
+                <Border ss:LineStyle="Continuous" ss:Weight="1" ss:Position="Top"/>
+            </Borders>
+        </Style>
+        <Style ss:ID="sNum_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sNum1Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sNum2Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sNum3Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sNum4Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+
+        <Style ss:ID="GsNum" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsNum_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsNum1Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsNum2Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsNum3Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsNum4Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+
+        <Style ss:ID="sTotalStr" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStrD" ss:Parent="sStr">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_TD" ss:Parent="sStr_T">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_BD" ss:Parent="sStr_B">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_BTD" ss:Parent="sStr_BT">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_RD" ss:Parent="sStr_R">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_RTD" ss:Parent="sStr_RT">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_RBD" ss:Parent="sStr_RB">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_RBTD" ss:Parent="sStr_RBT">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LD" ss:Parent="sStr_L">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LTD" ss:Parent="sStr_LT">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LBD" ss:Parent="sStr_LB">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LBTD" ss:Parent="sStr_LBT">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LRD" ss:Parent="sStr_LR">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LRTD" ss:Parent="sStr_LRT">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LRBD" ss:Parent="sStr_LRB">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalStr_LRBTD" ss:Parent="sStr_LRBT">
+            <Alignment ss:Horizontal="Distributed" ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+        </Style>
+        <Style ss:ID="sTotalNum_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0"/>
+        </Style>
+        <Style ss:ID="sTotalNum1Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0"/>
+        </Style>
+        <Style ss:ID="sTotalNum2Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.00"/>
+        </Style>
+        <Style ss:ID="sTotalNum3Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.000"/>
+        </Style>
+        <Style ss:ID="sTotalNum4Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="0.0000"/>
+        </Style>
+
+        <Style ss:ID="GsTotalNum" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract" ss:Parent="sStr">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_T" ss:Parent="sStr_T">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_B" ss:Parent="sStr_B">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_BT" ss:Parent="sStr_BT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_R" ss:Parent="sStr_R">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_RT" ss:Parent="sStr_RT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_RB" ss:Parent="sStr_RB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_RBT" ss:Parent="sStr_RBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_L" ss:Parent="sStr_L">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_LT" ss:Parent="sStr_LT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_LB" ss:Parent="sStr_LB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_LBT" ss:Parent="sStr_LBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_LR" ss:Parent="sStr_LR">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_LRT" ss:Parent="sStr_LRT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_LRB" ss:Parent="sStr_LRB">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum1Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0"/>
+        </Style>
+        <Style ss:ID="GsTotalNum2Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.00"/>
+        </Style>
+        <Style ss:ID="GsTotalNum3Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.000"/>
+        </Style>
+        <Style ss:ID="GsTotalNum4Fract_LRBT" ss:Parent="sStr_LRBT">
+            <Alignment ss:Vertical="Top"/>
+            <Font ss:Bold="1" ss:Size="11" ss:FontName="Calibri"/>
+            <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+            <NumberFormat ss:Format="#,##0.0000"/>
+        </Style>
+    </Styles>
+
+</Xelem>

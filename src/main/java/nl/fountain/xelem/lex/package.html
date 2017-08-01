@@ -1,0 +1,193 @@
+<body>
+Provides classes that enable reading SpreadsheetML.
+<P>
+The basic class for reading xml-spreadsheets of type spreadsheetML is
+{@link nl.fountain.xelem.lex.ExcelReader}. 
+It can deliver the contents of an xml-file or an 
+xml-InputSource as a fully populated {@link nl.fountain.xelem.excel.Workbook}.
+This package also offers an event-based model with the
+{@link nl.fountain.xelem.lex.ExcelReaderListener ExcelReaderListener-interface} 
+which can be fine-tuned with an {@link nl.fountain.xelem.lex.ExcelReaderFilter} 
+that acts as a wrapper for listeners.
+
+<UL>
+<LI><a href="#simple">reading SpreadsheetML - a simple case</a>
+<LI><a href="#memory">strategies for circumnavigating memory problems</a>
+<LI><a href="#areas">partial reading - setting the read area</a>
+<LI><a href="#eventbasedmodel">the event-based model</a>
+<LI><a href="#swapping">swapping read areas</a>
+<LI><a href="#filter">using filters</a>
+
+</UL>
+
+<P>&nbsp;
+
+<H3 id="simple">Reading SpreadsheetML - a simple case</H3>
+Suppose you want to do something. Well rather, suppose you have an Excel-file
+and you want to do something with it's contents and structure in Java. Here's
+what you got to do:
+<PRE>
+   ExcelReader reader = new ExcelReader();
+   Workbook xlWorkbook = reader.getWorkbook("foo/bar/myFile.xml");
+</PRE>
+Now what you have is a fully populated 
+{@link nl.fountain.xelem.excel.ss.XLWorkbook}, that is, the (almost) 
+complete representation
+of the Excel xml-file <code>myFile.xml</code> in Java class-instances. Now you can
+inspect it's structure, process it's contents, alter it or send it to the president.
+<P>
+OOoops! You got an <code><font color="red">
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+</font></code>, did ya? The thing is that the above code works fine as long as
+your workbooks aren't too big. Every cell, row, worksheet and so on in the file
+that you're reading is stuffed as an object into the one encompassing object
+XLWorkbook. How much will go in there depends -among others- on your system
+and VM-settings. So what if you want to read large files and huge input sources?
+
+<H3 id="memory">Strategies for circumnavigating memory problems</H3>
+There are several strategies to overcome the memory problems just mentioned:
+<OL>
+<LI>Cache memory-consuming XLElements in such a way that they can be found
+easily and loaded back on to dynamic memory at the time we need them. 
+The Row-element would be a likely candidate for caching.
+<LI>Partial reading. Read only those parts of the workbook that we're interested in.
+<LI>With an event-based interface we could process essential parts of the workbook
+while reading. We would discard those parts as soon as we're finished processing
+and not have the need to keep them in memory.
+</OL>
+The xelem.lex API realises strategies 2. and 3. What's more, the two strategies
+can be mixed
+and intermingled, procuring a flexible API that meets your every need.
+<br>
+[Mark that the event-based API will be faster. When for instance your object is 
+to process rows from a workbook, with the event-based model
+you only loop through all of the rows of
+the workbook once. Building an XLWorkbook first and then iterate through all of it's rows
+would take two loops.]
+
+<a name="areas"><H3>Partial reading - setting the read area</H3></a>
+When we know what part of the workbook we're interested in we can restrict reading
+to that particular part. More precise, we can tell ExcelReader
+which {@link nl.fountain.xelem.Area Area} of the worksheets to read.
+<PRE>
+   ExcelReader reader = new ExcelReader();
+   <b>reader.setReadArea(new Area("E11:M16"));</b>
+   Workbook xlWorkbook = reader.getWorkbook("foo/bar/myFile.xml");
+</PRE>
+The XLWorkbook that is returned will contain 
+{@link nl.fountain.xelem.excel.ss.SSWorksheet SSWorksheets} and
+{@link nl.fountain.xelem.excel.ss.SSTable SSTables} containing
+only those cells, rows and columns that
+were found in the specified area of the succesive worksheets. Apart from cells, rows,
+columns, tables and worksheets, all other 
+{@link nl.fountain.xelem.excel.XLElement XLElements} will be present 
+and fully populated. 
+Mark that the above code will treat all the worksheets in the workbook in the
+same way. If we want to set different read areas or clear the read area
+for individual worksheets we need other code. We'll come to that. First let's
+take a look at the event-based API. 
+
+<H3 id="eventbasedmodel">The event-based model</H3>
+We can register an {@link nl.fountain.xelem.lex.ExcelReaderListener} on the
+ExcelReader and recieve notification of parsing events and the construction
+of {@link nl.fountain.xelem.excel.XLElement XLElements} while reading. Here's
+a code-stub that enables us to process rows. We'll use an anonymous
+implementation of the {@link nl.fountain.xelem.lex.DefaultExcelReaderListener}.
+<PRE>
+   ExcelReader reader = new ExcelReader();
+   reader.addExcelReaderListener(new DefaultExcelReaderListener() {
+       public void setRow(int sheetIndex, String sheetName, Row row) {
+           <font color="green">// process row and/or it's cells
+           // ...</font>
+       }
+   });
+   reader.read("foo/bar/myFile.xml");
+</PRE>
+Of course we could do the same with a non-anonymous listener. And we could be
+listening to events other then the setRow-event as well. 
+<P>
+When we're only interested
+in particalur parts of the worksheets we might set the read area:
+<PRE>
+   ExcelReader reader = new ExcelReader();
+   <b>reader.setReadArea(new Area("E11:M16"));</b>
+   reader.addExcelReaderListener(new DefaultExcelReaderListener() {
+       public void setRow(int sheetIndex, String sheetName, Row row) {
+           <font color="green">// process row and/or it's cells
+           // ...</font>
+       }
+   });
+   reader.read("foo/bar/myFile.xml");
+</PRE>
+Now we will only be notified when the row is within the specified area and the
+row only contains cells that were found within that area.
+
+<H3 id="swapping">Swapping read areas</H3>
+Up till this far we have used the setReadArea-method to set one area for
+all the worksheets we were reading. Maybe we want to read different areas on
+different worksheets. Using the event-model we can set different read areas
+when different worksheets come along. (Or -for that matter- trigger what action
+so ever on any event.) Here's a SwappingAreaListener:
+<PRE>
+class SwappingAreaListener extends DefaultExcelReaderListener {
+    
+   private ExcelReader reader;
+
+   public SwappingAreaListener(ExcelReader reader) {
+      this.reader = reader;
+   }
+   
+   <font color="green">// override method in DefaultExcelReaderListener</font>
+   public void startWorksheet(int sheetIndex, Worksheet sheet) {
+      switch (sheetIndex) {
+         case 1:
+            reader.setReadArea(new Area("A1:C6"));
+            break;
+         case 2:
+            reader.setReadArea(new Area("G11:G11"));
+            break;
+         default:
+            reader.clearReadArea();
+     }        
+   }  
+}
+</PRE>
+The SwappingAreaListener tells ExcelReader to only read particular areas on
+sheets 1 and 2 and to read the rest of the sheets unrestricted. Mind that the
+sheetIndex is 0-based. Here's how SwappingAreaListener might be fit in in
+code that tells ExcelReader to get a workbook:
+<PRE>
+   ExcelReader reader = new ExcelReader();
+   SwappingAreaListener sal = new SwappingAreaListener(reader);
+   reader.addExcelReaderListener(sal);
+   Workbook xlWorkbook = reader.getWorkbook("foo/bar/myFile.xml");
+</PRE>
+The returned XLWorkbook will have it's sheets populated according to the
+restrictions imposed by SwappingAreaListener. Internally ExcelReader uses
+a {@link nl.fountain.xelem.lex.WorkbookListener} to build the workbook and
+events are being dispatched to both listeners. WorkbookListener uses these
+events to build and populate the workbook, SwappingAreaListener at the same time
+imposes restrictions. At the end of the read that is performed by the
+getWorkbook-method ExcelReader removes the workbooklistener and then returns
+the completed XLWorkbook. If you want to use the same ExcelReader to perform
+more reads that must not be restricted, do not forget to remove 
+the SwappingAreaListener.
+
+<H3 id="filter">Using filters</H3>
+An {@link nl.fountain.xelem.lex.ExcelReaderFilter} is an
+{@link nl.fountain.xelem.lex.ExcelReaderListener} that can register other
+listeners: it wraps other listeners. It's a sort of chain. The default
+implementations of these interfaces
+{@link nl.fountain.xelem.lex.DefaultExcelReaderListener}
+and {@link nl.fountain.xelem.lex.DefaultExcelReaderFilter} have contrary
+behaviour. Events send to DefaultExcelReaderListener drop dead unless
+it's subclass overrides the setXXX- or startXXX-method. Events
+send to DefaultExcelReaderFilter are propagated unfiltered to the registered
+listeners unless it's subclass overrides the method and takes appropriate action.
+<P>
+Filters and listeners can be configured in a variety of ways. For instance, we use an
+EmptyRowFilter to count the number of empty rows on a worksheet and abandon
+listening for further events on that sheet at a certain emptyRowCount. I'm sure
+your imagination, inventiveness and creativity go beyond that.
+
+</body>

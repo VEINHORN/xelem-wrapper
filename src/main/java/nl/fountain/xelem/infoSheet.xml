@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="iss_hyperlink">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="2" ss:WrapText="1"/>
+   <Font ss:Color="#0000FF" ss:Underline="Single"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="iss_DT">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/>
+   <Font x:Family="Swiss" ss:Color="#FF0000" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="iss_DD">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="2" ss:WrapText="1"/>
+   <Font ss:FontName="Verdana" x:Family="Swiss"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+  </Style> 
+  <Style ss:ID="iss_DD_bold">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="2" ss:WrapText="1"/>
+   <Font ss:FontName="Verdana" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid"/>
+  </Style>   
+ </Styles>
+ <ss:Worksheet ss:Name="x-info">
+  <ss:Table>
+   <ss:Column ss:AutoFitWidth="0" ss:Width="116.25"/>
+   <ss:Column ss:AutoFitWidth="0" ss:Width="377.25"/>
+   <ss:Row ss:Index="2">
+    <ss:Cell ss:StyleID="iss_DT"/>
+    <ss:Cell ss:StyleID="iss_DD"/>
+   </ss:Row>
+   <ss:Row ss:AutoFitHeight="0" ss:Height="129.75">
+    <ss:Cell ss:StyleID="iss_DT"><Data ss:Type="String">SpreadsheetML: </Data></ss:Cell>
+    <ss:Cell ss:StyleID="iss_DD"><Data ss:Type="String">Since the introduction of Microsoft® Office XP, it is possible to create spreadsheets using SpreadsheetML, an XML dialect developed by Microsoft to represent the information in an Excel spreadsheet. This kind of document is referred to as an XML spreadsheet. Because XML spreadsheets are text documents, they can be sent wherever a text document can, using any text-based messaging system (for example, e-mail, Web services, and Web-based applications). In addition, an XML spreadsheet can be processed by any XML processor, making XML spreadsheets true cross-platform documents. An XML spreadsheet can be created with any text-editing tool.</Data></ss:Cell>
+   </ss:Row>
+   <ss:Row>
+    <ss:Cell ss:StyleID="iss_DT"/>
+    <ss:Cell ss:StyleID="iss_DD"/>
+   </ss:Row>
+   <ss:Row>
+    <ss:Cell ss:StyleID="iss_DT"><Data ss:Type="String">see also: </Data></ss:Cell>
+    <ss:Cell ss:StyleID="iss_hyperlink" ss:HRef="http://www.microsoft.com/downloads/details.aspx?familyid=fe118952-3547-420a-a412-00a2662442d9&amp;displaylang=en"><Data ss:Type="String">Download details: Office 2003 XML Schemas</Data></ss:Cell>
+   </ss:Row>
+   <ss:Row>
+    <ss:Cell ss:StyleID="iss_DT"/>
+    <ss:Cell ss:StyleID="iss_DD"/>
+   </ss:Row>
+   <ss:Row ss:Height="51">
+    <ss:Cell ss:StyleID="iss_DT"><Data ss:Type="String">drawback: </Data></ss:Cell>
+    <ss:Cell ss:StyleID="iss_DD"><Data ss:Type="String">You cannot save objects in an XML spreadsheet, i.e. pictures, graphs etc. and there is no support for Visual Basic for Applications. But there is a simple solution for this. Just save the file as a common Excel Workbook.</Data></ss:Cell>
+   </ss:Row>
+   <ss:Row ss:Height="25.5">
+    <ss:Cell ss:StyleID="iss_DT"/>
+    <ss:Cell ss:StyleID="iss_DD"><Data ss:Type="String">Choose &gt;File &gt;Save As... and in the 'Save as type'-box choose Microsoft Office Excel Workbook (*.xls).</Data></ss:Cell>
+   </ss:Row>
+   <ss:Row>
+    <ss:Cell ss:StyleID="iss_DT"/>
+    <ss:Cell ss:StyleID="iss_DD"/>
+   </ss:Row>
+   <ss:Row>
+    <ss:Cell ss:StyleID="iss_DT"><Data ss:Type="String">xelem: </Data></ss:Cell>
+    <ss:Cell ss:StyleID="iss_DD_bold"><Data ss:Type="String">This XML spreadsheet was created with xelem.</Data></ss:Cell>
+   </ss:Row>
+   <ss:Row ss:AutoFitHeight="0" ss:Height="25.5">
+    <ss:Cell ss:StyleID="iss_DT"/>
+    <ss:Cell ss:StyleID="iss_DD"><Data ss:Type="String">xelem is a java-library that enables the creation of XML spreadsheets from within any java (web)application. xelem can be downloaded at:</Data></ss:Cell>
+   </ss:Row>
+   <ss:Row>
+    <ss:Cell ss:StyleID="iss_DT"/>
+    <ss:Cell ss:StyleID="iss_DD"/>
+   </ss:Row>
+   <ss:Row>
+    <ss:Cell ss:StyleID="iss_DT"/>
+    <ss:Cell ss:StyleID="iss_hyperlink" ss:HRef="https://sourceforge.net/projects/xelem"><Data ss:Type="String">https://sourceforge.net/projects/xelem</Data></ss:Cell>
+   </ss:Row>
+   <ss:Row>
+    <ss:Cell ss:StyleID="iss_DT"/>
+    <ss:Cell ss:StyleID="iss_DD"/>
+   </ss:Row>
+  </ss:Table>
+  <x:WorksheetOptions>
+   <x:DoNotDisplayGridlines/>
+   <x:DoNotDisplayHeadings/>
+  </x:WorksheetOptions>
+ </ss:Worksheet>
+</Workbook>

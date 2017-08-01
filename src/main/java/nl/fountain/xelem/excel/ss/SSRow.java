@@ -22,6 +22,7 @@
 package nl.fountain.xelem.excel.ss;
 
 import java.lang.reflect.Method;
+import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.TreeMap;
@@ -137,7 +138,14 @@ public class SSRow extends AbstractXLElement implements Row {
         cell.setStyleID(styleID);
         return addCellAt(maxCellIndex() + 1, cell);
     }
-    
+
+    @Override
+    public Cell addCell(BigDecimal data) {
+        Cell cell = new SSCell();
+        cell.setData(data);
+        return addCellAt(maxCellIndex() + 1, cell);
+    }
+
     public Cell addCell(int data) {
         Cell cell = new SSCell();
         cell.setData(data);

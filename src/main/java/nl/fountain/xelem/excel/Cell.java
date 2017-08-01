@@ -21,6 +21,7 @@
  */
 package nl.fountain.xelem.excel;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 import org.w3c.dom.Document;
@@ -68,67 +69,67 @@ public interface Cell extends XLElement {
     /**
      * The Excel datatype for number values: {@value}.
      */
-    public static final String DATATYPE_NUMBER = "Number";
+    String DATATYPE_NUMBER = "Number";
     
     /**
      * The Excel datatype for date and time values: {@value}.
      */
-    public static final String DATATYPE_DATE_TIME = "DateTime";
+    String DATATYPE_DATE_TIME = "DateTime";
     
     /**
      * The Excel datatype for boolean values: {@value}.
      */
-    public static final String DATATYPE_BOOLEAN = "Boolean";
+    String DATATYPE_BOOLEAN = "Boolean";
     
     /**
      * The Excel datatype for string values: {@value}.
      */
-    public static final String DATATYPE_STRING = "String";
+    String DATATYPE_STRING = "String";
     
     /**
      * The Excel datatype for error values: {@value}.
      */
-    public static final String DATATYPE_ERROR = "Error";
+    String DATATYPE_ERROR = "Error";
     
     /**
      * The Excel error value indicating division by zero: {@value}.
      */
-    public static final String ERRORVALUE_DIV_BY_0 = "#DIV/0";
+    String ERRORVALUE_DIV_BY_0 = "#DIV/0";
     
     /**
      * The Excel error value indicating text in a formula is not being 
      * recognized: {@value}.
      */
-    public static final String ERRORVALUE_NAME = "#NAME?";
+    String ERRORVALUE_NAME = "#NAME?";
     
     /**
      * The Excel error value indicating 
      * intersection of two cell ranges is empty {@value}. 
      */
-    public static final String ERRORVALUE_NULL = "#NULL!";
+    String ERRORVALUE_NULL = "#NULL!";
     
     /**
      * The Excel error value indicating problems with a number in a
      * formula or function: {@value}.
      */
-    public static final String ERRORVALUE_NUM = "#NUM!";
+    String ERRORVALUE_NUM = "#NUM!";
     
     /**
      * The Excel error value indicating a value is not available: {@value}.
      */
-    public static final String ERRORVALUE_NA = "#N/A";
+    String ERRORVALUE_NA = "#N/A";
     
     /**
      * The Excel error value indicating that a cell reference is not valid:
      * {@value}.
      */
-    public static final String ERRORVALUE_REF = "#REF!";
+    String ERRORVALUE_REF = "#REF!";
     
     /**
      * The Excel error value indicating the wrong type of argument or operand
      * is being used: {@value}.
      */
-    public static final String ERRORVALUE_VALUE = "#VALUE!";
+    String ERRORVALUE_VALUE = "#VALUE!";
        
     
     /**
@@ -452,6 +453,14 @@ public interface Cell extends XLElement {
      * @see <a href="#nanvalues">NaN values</a>
      */
     void setData(double data);
+
+    /**
+     * Sets the given BigDecimal as the data of this cell. The attribute
+     * ss:Type of the Data-element will be set to "Number".
+     *
+     * @param data The data to be displayed in this cell.
+     */
+    void setData(BigDecimal data);
     
     /**
      * Sets the data of this cell to the value

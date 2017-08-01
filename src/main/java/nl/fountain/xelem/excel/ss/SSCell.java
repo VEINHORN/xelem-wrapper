@@ -22,6 +22,7 @@
 package nl.fountain.xelem.excel.ss;
 
 import java.lang.reflect.Method;
+import java.math.BigDecimal;
 import java.util.Date;
 
 import nl.fountain.xelem.GIO;
@@ -330,6 +331,12 @@ public class SSCell extends AbstractXLElement implements Cell {
             datatype = DATATYPE_NUMBER;
         }
         setData$(String.valueOf(data));       
+    }
+
+    @Override
+    public void setData(BigDecimal data) {
+        datatype = DATATYPE_NUMBER;
+        setData$(String.valueOf(data));
     }
     
     public void setData(char data) {

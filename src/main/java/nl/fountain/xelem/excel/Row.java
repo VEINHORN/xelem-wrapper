@@ -21,6 +21,7 @@
  */
 package nl.fountain.xelem.excel;
 
+import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.TreeMap;
@@ -47,7 +48,7 @@ public interface Row extends XLElement {
 	/**
 	 * Sets the ss:StyleID on this row. If no styleID is set on a row,
 	 * the ss:StyleID-attribute is not deployed in the resulting xml and
-	 * Excel employes the Default-style on the row.
+	 * Excel employs the Default-style on the row.
 	 * 
 	 * @param 	id	the id of the style to employ on this row.
 	 */
@@ -135,7 +136,7 @@ public interface Row extends XLElement {
      * the cell will be added at index 1. Otherwise the cell will be added
      * at {@link #maxCellIndex()} + 1.
      * <P>
-     * Datatype and value of the new cell depend on the passed object.
+     * Data type and value of the new cell depend on the passed object.
      * 
      * @param data	The data to be displayed in this cell.
      * 
@@ -153,7 +154,7 @@ public interface Row extends XLElement {
      * the cell will be added at index 1. Otherwise the cell will be added
      * at {@link #maxCellIndex()} + 1.
      * <P>
-     * Datatype and value of the new cell depend on the passed object.
+     * Data type and value of the new cell depend on the passed object.
      * The new cell will have it's styleID set to the given id.
      * 
      * @param data		The data to be displayed in this cell.
@@ -176,7 +177,7 @@ public interface Row extends XLElement {
      * 
      * @param data		The data to be displayed in this cell.
      * 
-     * @return A new cell with a datatype "Number" and the given double as value. 
+     * @return A new cell with a data type "Number" and the given double as value.
      * @throws IndexOutOfBoundsException If the index is less then
      * 			{@link nl.fountain.xelem.excel.Worksheet#firstColumn}
      * 			or greater then
@@ -203,14 +204,28 @@ public interface Row extends XLElement {
      * @see nl.fountain.xelem.excel.Cell#setStyleID(String)
      */
     Cell addCell(double data, String styleID);
-    
+
+    /**
+     * Adds a new Cell to this row. If no cells were previously added
+     * the cell will be added at index 1. Otherwise the cell will be added
+     * at {@link #maxCellIndex()} + 1.
+     *
+     * @param data The data to be displayed in this cell.
+     * @return A new cell with a data type "Number" and the given int as value.
+     * @throws IndexOutOfBoundsException If the index is less then
+     * 			{@link nl.fountain.xelem.excel.Worksheet#firstColumn}
+     * 			or greater then
+     * 			{@link nl.fountain.xelem.excel.Worksheet#lastColumn}
+     */
+    Cell addCell(BigDecimal data);
+
     /**
      * Adds a new Cell to this row. If no cells were previously added
      * the cell will be added at index 1. Otherwise the cell will be added
      * at {@link #maxCellIndex()} + 1.
      * 
      * @param data		The data to be displayed in this cell.
-     * @return A new cell with a datatype "Number" and the given int as value. 
+     * @return A new cell with a data type "Number" and the given int as value.
      * @throws IndexOutOfBoundsException If the index is less then
      * 			{@link nl.fountain.xelem.excel.Worksheet#firstColumn}
      * 			or greater then

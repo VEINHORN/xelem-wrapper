@@ -423,14 +423,7 @@ public interface Cell extends XLElement {
      * @param 	data The data to be displayed in this cell. 
      */
     void setData(int data);
-    
-    /**
-     * Sets the given long as the data of this cell. The attribute
-     * ss:Type of the Data-element will be set to "Number". 
-     * 
-     * @param 	data The data to be displayed in this cell. 
-     */
-    void setData(long data);
+
     
     /**
      * Sets the given float as the data of this cell. The attribute

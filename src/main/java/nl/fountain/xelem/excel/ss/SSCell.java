@@ -224,14 +224,14 @@ public class SSCell extends AbstractXLElement implements Cell {
         setData$(data.toString());
     }
     
-    public void setData(Long data) {
+    /*public void setData(Long data) {
         if (data == null) {
             setError(ERRORVALUE_NA);
             return;
         }
         datatype = DATATYPE_NUMBER;
         setData$(data.toString());
-    }
+    }*/
     
     public void setData(Float data) {
         if (data == null) {
@@ -310,7 +310,8 @@ public class SSCell extends AbstractXLElement implements Cell {
         setData$(String.valueOf(data));
     }
 
-    public void setData(long data) {
+    @Override
+    public void setData(Long data) {
         datatype = DATATYPE_NUMBER;
         setData$(String.valueOf(data));
     }

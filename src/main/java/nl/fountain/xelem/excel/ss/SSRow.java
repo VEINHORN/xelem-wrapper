@@ -147,6 +147,14 @@ public class SSRow extends AbstractXLElement implements Row {
     }
 
     @Override
+    public Cell addCell(BigDecimal data, String styleID) {
+        Cell cell = new SSCell();
+        cell.setData(data);
+        cell.setStyleID(styleID);
+        return addCellAt(maxCellIndex() + 1, cell);
+    }
+
+    @Override
     public Cell addCell(Long data, String styleID) {
         Cell cell = new SSCell();
         cell.setData(data);

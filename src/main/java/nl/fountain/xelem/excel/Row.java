@@ -219,6 +219,8 @@ public interface Row extends XLElement {
      */
     Cell addCell(BigDecimal data);
 
+    Cell addCell(BigDecimal data, String styleID);
+
     Cell addCell(Long data, String styleID);
 
     /**

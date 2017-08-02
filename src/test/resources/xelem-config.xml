@@ -51,8 +51,9 @@
             <Alignment ss:Vertical="Top"/>
             <NumberFormat ss:Format="0.0"/>
         </Style>
-        <Style ss:ID="sNum2Fract" ss:Parent="sStr">
-            <Alignment ss:Vertical="Top"/>
+        <Style ss:ID="sNum2Fract">
+            <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+            <Font ss:FontName="Calibri" ss:Size="11"/>
             <NumberFormat ss:Format="0.00"/>
         </Style>
         <Style ss:ID="sNum3Fract" ss:Parent="sStr">

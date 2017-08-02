@@ -223,16 +223,7 @@ public class SSCell extends AbstractXLElement implements Cell {
         }
         setData$(data.toString());
     }
-    
-    /*public void setData(Long data) {
-        if (data == null) {
-            setError(ERRORVALUE_NA);
-            return;
-        }
-        datatype = DATATYPE_NUMBER;
-        setData$(data.toString());
-    }*/
-    
+
     public void setData(Float data) {
         if (data == null) {
             setError(ERRORVALUE_NA);

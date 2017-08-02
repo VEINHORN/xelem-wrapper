@@ -20,3 +20,5 @@ Xelem is a compact Java-library to read and write Excel files of type Spreadshee
     <version>e6fc9c6878</version>
 </dependency>
 ```
+
+## DSL description

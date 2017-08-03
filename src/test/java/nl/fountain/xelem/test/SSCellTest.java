@@ -2,7 +2,7 @@
  * Created on Sep 8, 2004
  *
  */
-package nl.fountain.xelem.excel.ss;
+package nl.fountain.xelem.test;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -11,7 +11,7 @@ import java.util.Locale;
 import nl.fountain.xelem.GIO;
 import nl.fountain.xelem.XLUtil;
 import nl.fountain.xelem.excel.Cell;
-import nl.fountain.xelem.excel.XLElementTest;
+import nl.fountain.xelem.excel.ss.SSCell;
 
 /**
  *

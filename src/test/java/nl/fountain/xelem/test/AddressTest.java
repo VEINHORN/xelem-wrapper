@@ -2,12 +2,15 @@
  * Created on 3-dec-2004
  *
  */
-package nl.fountain.xelem;
+package nl.fountain.xelem.test;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
 import junit.framework.TestCase;
+import nl.fountain.xelem.Address;
+import nl.fountain.xelem.Area;
+import nl.fountain.xelem.CellPointer;
 import nl.fountain.xelem.excel.Worksheet;
 
 

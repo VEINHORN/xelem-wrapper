@@ -2,7 +2,7 @@
  * Created on Nov 2, 2004
  *
  */
-package nl.fountain.xelem.excel;
+package nl.fountain.xelem.test;
 
 import java.io.StringWriter;
 
@@ -24,6 +24,7 @@ import junit.framework.TestCase;
 
 import nl.fountain.xelem.GIO;
 
+import nl.fountain.xelem.excel.XLElement;
 import org.w3c.dom.DOMImplementation;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

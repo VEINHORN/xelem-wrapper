@@ -2,7 +2,7 @@
  * Created on Dec 24, 2004
  *
  */
-package nl.fountain.xelem.expat;
+package nl.fountain.xelem.test;
 
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
@@ -22,6 +22,7 @@ import nl.fountain.xelem.excel.XLElement;
 import nl.fountain.xelem.excel.ss.SSCell;
 import nl.fountain.xelem.excel.ss.SSRow;
 
+import nl.fountain.xelem.expat.XLDocument;
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

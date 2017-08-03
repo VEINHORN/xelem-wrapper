@@ -2,9 +2,11 @@
  * Created on 9-nov-2004
  *
  */
-package nl.fountain.xelem;
+package nl.fountain.xelem.test;
 
 import junit.framework.TestCase;
+import nl.fountain.xelem.XSerializer;
+import nl.fountain.xelem.XelemException;
 import nl.fountain.xelem.excel.Workbook;
 import nl.fountain.xelem.excel.ss.XLWorkbook;
 
@@ -37,14 +39,14 @@ public class XSerializerTest extends TestCase {
     public void testFile() throws XelemException {
         XSerializer xs = new XSerializer();
         wb.setFileName("testoutput/xs.xml");
-        wb.addSheet().addCell("BV Financiën");
+        wb.addSheet().addCell("BV Financiï¿½n");
         xs.serialize(wb);
     }
     
     public void testFile2() throws XelemException {
         XSerializer xs = new XSerializer(XSerializer.US_ASCII);
         wb.setFileName("testoutput/xs_US_ASCII.xml");
-        wb.addSheet().addCell("BV Financiën");
+        wb.addSheet().addCell("BV Financiï¿½n");
         xs.serialize(wb);
     }
 

@@ -40,7 +40,7 @@ import org.xml.sax.helpers.DefaultHandler;
 /**
  *
  */
-class AnonymousBuilder extends DefaultHandler implements Builder {
+public class AnonymousBuilder extends DefaultHandler implements Builder {
     
     private static Map<String, Method> methodMap;
     private boolean occupied;
@@ -74,7 +74,7 @@ class AnonymousBuilder extends DefaultHandler implements Builder {
         occupied = b;
     }
     
-    protected boolean isOccupied() {
+    public boolean isOccupied() {
         return occupied;
     }
     

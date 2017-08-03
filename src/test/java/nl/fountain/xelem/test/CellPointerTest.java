@@ -2,9 +2,11 @@
  * Created on 28-nov-2004
  *
  */
-package nl.fountain.xelem;
+package nl.fountain.xelem.test;
 
 import junit.framework.TestCase;
+import nl.fountain.xelem.Address;
+import nl.fountain.xelem.CellPointer;
 
 
 public class CellPointerTest extends TestCase {

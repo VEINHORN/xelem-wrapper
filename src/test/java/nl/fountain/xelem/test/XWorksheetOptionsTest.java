@@ -2,12 +2,12 @@
  * Created on Nov 2, 2004
  *
  */
-package nl.fountain.xelem.excel.x;
+package nl.fountain.xelem.test;
 
 import nl.fountain.xelem.GIO;
 import nl.fountain.xelem.excel.Pane;
 import nl.fountain.xelem.excel.WorksheetOptions;
-import nl.fountain.xelem.excel.XLElementTest;
+import nl.fountain.xelem.excel.x.XWorksheetOptions;
 
 /**
  *

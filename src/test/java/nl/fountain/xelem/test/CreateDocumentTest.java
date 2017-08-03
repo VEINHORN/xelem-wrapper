@@ -2,7 +2,7 @@
  * Created on Nov 2, 2004
  *
  */
-package nl.fountain.xelem.excel.ss;
+package nl.fountain.xelem.test;
 
 import java.io.File;
 import java.io.StringWriter;
@@ -33,6 +33,7 @@ import nl.fountain.xelem.excel.Workbook;
 import nl.fountain.xelem.excel.Worksheet;
 import nl.fountain.xelem.excel.WorksheetOptions;
 
+import nl.fountain.xelem.excel.ss.XLWorkbook;
 import org.w3c.dom.Document;
 
 
@@ -362,7 +363,7 @@ public class CreateDocumentTest extends TestCase {
         sheet.addColumnAt(2).setWidth(200);
         
         sheet.addCellAt(9, 1);
-        sheet.addCell("&1<2>3\" ' € @         ");
+        sheet.addCell("&1<2>3\" ' ï¿½ @         ");
         
         sheet.addCellAt(11, 1);
         sheet.addCell("'=1+2");
@@ -725,10 +726,10 @@ public class CreateDocumentTest extends TestCase {
     
     public void testSpecialCharacters() throws Exception {
         Workbook wb = new XLWorkbook("test28");
-        wb.addSheet().addCell("2020 BV Financiën");
+        wb.addSheet().addCell("2020 BV Financiï¿½n");
         
         String xml = xmlToString(wb);
-        assertTrue(xml.indexOf("<Data ss:Type=\"String\">2020 BV Financiën</Data>") > 0);
+        assertTrue(xml.indexOf("<Data ss:Type=\"String\">2020 BV Financiï¿½n</Data>") > 0);
         
         //System.out.println(xml);
         if (toFile) xmlToFile(wb);

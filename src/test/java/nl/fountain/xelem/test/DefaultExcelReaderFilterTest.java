@@ -2,7 +2,7 @@
  * Created on 16-apr-2005
  *
  */
-package nl.fountain.xelem.lex;
+package nl.fountain.xelem.test;
 
 import java.io.File;
 
@@ -13,6 +13,10 @@ import nl.fountain.xelem.excel.Cell;
 import nl.fountain.xelem.excel.Row;
 import nl.fountain.xelem.excel.Workbook;
 import nl.fountain.xelem.excel.Worksheet;
+import nl.fountain.xelem.lex.DefaultExcelReaderFilter;
+import nl.fountain.xelem.lex.ExcelReader;
+import nl.fountain.xelem.lex.ExcelReaderFilter;
+import nl.fountain.xelem.lex.WorkbookListener;
 
 
 public class DefaultExcelReaderFilterTest extends TestCase {

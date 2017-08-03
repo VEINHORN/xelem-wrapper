@@ -2,11 +2,11 @@
  * Created on 31-mrt-2005
  *
  */
-package nl.fountain.xelem.excel.ss;
+package nl.fountain.xelem.test;
 
 import nl.fountain.xelem.GIO;
 import nl.fountain.xelem.excel.Comment;
-import nl.fountain.xelem.excel.XLElementTest;
+import nl.fountain.xelem.excel.ss.SSComment;
 
 
 /**

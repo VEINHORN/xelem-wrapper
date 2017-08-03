@@ -1,4 +1,4 @@
-package nl.fountain.xelem.ztest;
+package nl.fountain.xelem.test;
 
 import javax.xml.parsers.ParserConfigurationException;
 
@@ -7,6 +7,7 @@ import nl.fountain.xelem.XSerializer;
 import nl.fountain.xelem.XelemException;
 import nl.fountain.xelem.excel.Cell;
 
+import nl.fountain.xelem.ztest.StyleFactoryWorkbook;
 import org.w3c.dom.Element;
 
 public class StyleFactoryWorkbookTest {

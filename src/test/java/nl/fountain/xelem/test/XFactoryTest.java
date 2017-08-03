@@ -2,7 +2,7 @@
  * Created on 24-okt-2004
  *
  */
-package nl.fountain.xelem;
+package nl.fountain.xelem.test;
 
 import java.io.FileNotFoundException;
 import java.util.Iterator;
@@ -10,8 +10,11 @@ import java.util.List;
 
 import javax.xml.parsers.ParserConfigurationException;
 
+import nl.fountain.xelem.GIO;
+import nl.fountain.xelem.UnsupportedStyleException;
+import nl.fountain.xelem.XFactory;
+import nl.fountain.xelem.XelemException;
 import nl.fountain.xelem.excel.XLElement;
-import nl.fountain.xelem.excel.XLElementTest;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
@@ -27,7 +30,7 @@ public class XFactoryTest extends XLElementTest {
     
     protected void setUp() throws Exception {
         String configFileName =
-            "testsuitefiles/XFactoryTest/XFactoryTest.xml";
+            "testsuitefiles/XelemTest/XelemTest.xml";
         XFactory.setConfigurationFileName(configFileName);
     }
     

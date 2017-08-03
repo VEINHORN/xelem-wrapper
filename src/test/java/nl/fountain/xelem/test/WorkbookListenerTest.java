@@ -2,10 +2,11 @@
  * Created on 8-apr-2005
  *
  */
-package nl.fountain.xelem.lex;
+package nl.fountain.xelem.test;
 
 import junit.framework.TestCase;
 import nl.fountain.xelem.excel.Workbook;
+import nl.fountain.xelem.lex.WorkbookListener;
 
 
 public class WorkbookListenerTest extends TestCase {

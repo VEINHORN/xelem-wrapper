@@ -2,33 +2,13 @@
  * Created on Sep 8, 2004
  *
  */
-package nl.fountain.xelem.integration;
+package nl.fountain.xelem.test;
 
 import java.io.File;
 
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import junit.textui.TestRunner;
-import nl.fountain.xelem.AddressTest;
-import nl.fountain.xelem.AreaTest;
-import nl.fountain.xelem.CellPointerTest;
-import nl.fountain.xelem.XFactoryTest;
-import nl.fountain.xelem.XLUtilTest;
-import nl.fountain.xelem.excel.ss.CreateDocumentTest;
-import nl.fountain.xelem.excel.ss.SSCellTest;
-import nl.fountain.xelem.excel.ss.SSColumnTest;
-import nl.fountain.xelem.excel.ss.SSCommentTest;
-import nl.fountain.xelem.excel.ss.SSRowTest;
-import nl.fountain.xelem.excel.ss.SSTableTest;
-import nl.fountain.xelem.excel.ss.SSWorksheetTest;
-import nl.fountain.xelem.excel.ss.XLWorkbookTest;
-import nl.fountain.xelem.excel.x.XPaneTest;
-import nl.fountain.xelem.excel.x.XWorksheetOptionsTest;
-import nl.fountain.xelem.expat.XLDocumentTest;
-import nl.fountain.xelem.lex.DirectorTest;
-import nl.fountain.xelem.lex.ExcelReaderListenerTest;
-import nl.fountain.xelem.lex.ExcelReaderTest;
-import nl.fountain.xelem.lex.WorkbookListenerTest;
 
 /**
  *

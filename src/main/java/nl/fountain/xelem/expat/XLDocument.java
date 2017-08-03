@@ -471,7 +471,7 @@ public class XLDocument {
      * @throws java.util.NoSuchElementException if a Worksheet element with such
      * a name does not exist
      */
-    protected Element getTableElement(String sheetName) {
+    public Element getTableElement(String sheetName) {
         Element tableElement = (Element) tableMap.get(sheetName);
         if (tableElement == null) {
 	        Node sheet = getSheetElement(sheetName);

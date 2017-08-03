@@ -2,14 +2,15 @@
  * Created on Sep 8, 2004
  *
  */
-package nl.fountain.xelem.excel.ss;
+package nl.fountain.xelem.test;
 
 import java.util.Iterator;
 
 import nl.fountain.xelem.GIO;
 import nl.fountain.xelem.excel.Row;
 import nl.fountain.xelem.excel.Table;
-import nl.fountain.xelem.excel.XLElementTest;
+import nl.fountain.xelem.excel.ss.SSRow;
+import nl.fountain.xelem.excel.ss.SSTable;
 
 /**
  *

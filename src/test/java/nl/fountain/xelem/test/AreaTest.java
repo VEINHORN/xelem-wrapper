@@ -2,9 +2,11 @@
  * Created on 5-apr-2005
  *
  */
-package nl.fountain.xelem;
+package nl.fountain.xelem.test;
 
 import junit.framework.TestCase;
+import nl.fountain.xelem.Address;
+import nl.fountain.xelem.Area;
 
 /**
  *

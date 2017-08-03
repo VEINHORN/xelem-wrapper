@@ -33,7 +33,7 @@ import nl.fountain.xelem.excel.Worksheet;
  * 
  * @since xelem.2.0
  */
-class Director {
+public class Director {
     
     private XLWorkbookBuilder xlworkbookbuilder;
     private SSWorksheetBuilder ssworksheetbuilder;

@@ -12,7 +12,7 @@ import java.net.URL;
 /**
  * Created by Boris Korogvich on 28.07.2017.
  */
-public class XFactoryTest {
+public class XelemTest {
     @Test
     public void testXFactory() throws XelemException {
         URL resource = getClass().getResource("/xelem-config.xml");
@@ -21,8 +21,6 @@ public class XFactoryTest {
         Workbook workbook = new XLWorkbook();
         workbook.setFileName("imported.xml");
 
-
-        /** 1st impl */
         XelemBuilder.with(workbook)
                 .newSheet()
                   .addRow()

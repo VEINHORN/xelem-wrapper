@@ -2,7 +2,7 @@
  * Created on Sep 10, 2004
  *
  */
-package nl.fountain.xelem.excel.ss;
+package nl.fountain.xelem.test;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -14,7 +14,8 @@ import nl.fountain.xelem.excel.DocumentProperties;
 import nl.fountain.xelem.excel.DuplicateNameException;
 import nl.fountain.xelem.excel.Workbook;
 import nl.fountain.xelem.excel.Worksheet;
-import nl.fountain.xelem.excel.XLElementTest;
+import nl.fountain.xelem.excel.ss.SSWorksheet;
+import nl.fountain.xelem.excel.ss.XLWorkbook;
 
 /**
  *

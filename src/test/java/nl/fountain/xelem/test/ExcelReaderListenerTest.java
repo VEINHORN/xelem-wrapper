@@ -2,7 +2,7 @@
  * Created on 6-apr-2005
  *
  */
-package nl.fountain.xelem.lex;
+package nl.fountain.xelem.test;
 
 import java.util.List;
 import java.util.Map;
@@ -18,6 +18,8 @@ import nl.fountain.xelem.excel.Row;
 import nl.fountain.xelem.excel.Table;
 import nl.fountain.xelem.excel.Worksheet;
 import nl.fountain.xelem.excel.WorksheetOptions;
+import nl.fountain.xelem.lex.ExcelReader;
+import nl.fountain.xelem.lex.ExcelReaderListener;
 
 /**
  *

@@ -2,11 +2,11 @@
  * Created on Nov 4, 2004
  *
  */
-package nl.fountain.xelem.excel.x;
+package nl.fountain.xelem.test;
 
 import nl.fountain.xelem.GIO;
 import nl.fountain.xelem.excel.Pane;
-import nl.fountain.xelem.excel.XLElementTest;
+import nl.fountain.xelem.excel.x.XPane;
 
 /**
  *

@@ -2,11 +2,12 @@
  * Created on Oct 29, 2004
  *
  */
-package nl.fountain.xelem;
+package nl.fountain.xelem.test;
 
 import java.util.Date;
 
 import junit.framework.TestCase;
+import nl.fountain.xelem.XLUtil;
 
 /**
  *

@@ -2,7 +2,7 @@
  * Created on 15-mrt-2005
  *
  */
-package nl.fountain.xelem.lex;
+package nl.fountain.xelem.test;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -39,6 +39,7 @@ import nl.fountain.xelem.excel.Worksheet;
 import nl.fountain.xelem.excel.WorksheetOptions;
 import nl.fountain.xelem.excel.ss.XLWorkbook;
 
+import nl.fountain.xelem.lex.ExcelReader;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
